@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap');
+
 body{
-    height: 100vh;
-    width: 100vw;
+    font-family: "Questrial", serif;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 .nav-links{
     display: flex;
@@ -14,8 +16,21 @@ nav {
     align-items: center;
 }
 
-.intro{
+.intro {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url("../assets/banner 1.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-box{
+    padding: 5%;
+    color: white;
+}
+.intro-title{
+    font-size: 48px;
+    width: 60%;
+    font-weight: 600;
 }
