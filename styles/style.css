@@ -28,9 +28,34 @@ nav {
 .intro-box{
     padding: 5%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
 }
 .intro-title{
     font-size: 48px;
     width: 60%;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+.intro-text{
+    margin-bottom: 1%;
+}
+.intro-link{
+    background-color: #d3ab4c;
+    color: #1c2421;
+    font-weight: 700;
+    padding: 1%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+.intro-arrow{
+    width: 15px;
+    padding: 3px;
+    border: 1px solid #1c2421;
+    border-radius: 15px;
+    margin-left: 5px;
 }
