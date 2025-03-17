@@ -69,6 +69,8 @@ nav {
     align-items: center;
     padding: 5%;
     line-height: 24px;
+    width: 100vw;
+    height: 100vh;
 }
 .about-sec1{
     display: flex;
@@ -101,4 +103,46 @@ nav {
     width: 500px;
     height: 450px;
     border-radius: 2%;
+}
+
+/*Areas*/
+.areas{
+    background-color: #00222e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.areas-title{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+.areas-subtitle{
+    color: white;
+    
+}
+.areas-cards{
+    display: flex;
+    flex-direction: column;
+}
+.areas-cardsline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.areas-icones{
+    width: 10%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f3441;
+    font-size: 14px;
+    width: 25%;
+    margin: 1%;
+    padding: 5% 0 5% 0;
 }
