@@ -214,6 +214,29 @@ nav {
     background-size: cover;
 }
 
+/*EQUIPE*/
+.equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/assets/background/equipe.png");
+    background-position: 75% 0%;
+}
+.equipe-sec{
+    display:flex;
+}
+.equipe-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5%;
+}
+.equipe-img{
+    width: 35%;
+}
 
 /*REVIEWS*/
 
