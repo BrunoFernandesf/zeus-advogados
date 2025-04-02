@@ -19,6 +19,8 @@ nav {
 /*INTRO*/
 .intro {
     background-image: url("../assets/background/banner\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,7 +241,42 @@ nav {
 }
 
 /*REVIEWS*/
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.reviews-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.reviews-cards{
+    background-color: #cac7c1;
+}
 
 /*FALE CONOSCO*/
-
+.fale-conosco-titulo{
+    background-color: #00222e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fale-conosco-contato{
+    background-image: url("../assets/background/contato.png");
+}
 /*FOOTER*/
+.rodape{
+    background-color: #00222e;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*COPYRIGHT*/
+.copyright{
+    background-color: #0f3441;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
