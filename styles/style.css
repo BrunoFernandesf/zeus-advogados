@@ -3,16 +3,45 @@
 body{
     font-family: "Questrial", serif;
 }
-nav {
+.nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
+    width: 100%;
+}
+.logo{
+    width: 25%;
+}
+.links{
+    width: 50%;
 }
 .nav-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    color: white;
+}
+.nav-links li:hover{
+    color: #d8ac4c;
+    border-top: 1px solid #d8ac4c;
+    border-bottom: 1px solid #d8ac4c;
+    padding: 1%;
+}
+.socials{
+    width: 15%;
+}
+.nav-socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-socials-icones{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50%;
+    padding: 15%;
 }
 
 
