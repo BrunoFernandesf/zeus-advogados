@@ -2,6 +2,8 @@
 
 body{
     font-family: "Questrial", serif;
+    width: 100vw;
+    height: 100vh;
 }
 .nav {
     display: flex;
@@ -9,12 +11,18 @@ body{
     align-items: center;
     position: fixed;
     width: 100%;
+    padding: 1% 0 0 0;
 }
 .logo{
     width: 25%;
+    margin: 0 0 0 5%;
+}
+.logo-img{
+    width: 50%;
 }
 .links{
     width: 50%;
+    margin: 0 10% 0 0;
 }
 .nav-links{
     display: flex;
@@ -54,13 +62,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
-    line-height: 24px;
     width: 100vw;
     height: 100vh;
 }
 .intro-box{
-    padding: 5%;
+    margin: 10% 10% 5% 5%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -71,10 +77,12 @@ body{
     font-size: 48px;
     width: 60%;
     font-weight: 700;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .intro-text{
     margin-bottom: 1%;
+    font-weight: 500;
+    font-size: 20px;
 }
 .intro-link{
     background-color: #d3ab4c;
@@ -84,6 +92,7 @@ body{
     border-radius: 25px;
     display: flex;
     align-items: center;
+    margin: 1% 0 0 0;
 }
 .intro-arrow{
     width: 15px;
@@ -101,7 +110,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
     line-height: 24px;
     width: 100vw;
     height: 100vh;
@@ -112,7 +120,7 @@ body{
     justify-content: space-between;
     gap: 25px;
     width: 75%;
-    padding: 0 10% 0 0;
+    padding: 0 5% 0 5%;
 }
 .about-title{
     color: #00222e;
@@ -122,6 +130,7 @@ body{
     font-size: 24px;
     display: flex;
     align-items: center;
+    margin-top: 5%;
 }
 .title-line{
     background-color: #d3ab4c;
@@ -133,10 +142,23 @@ body{
 .about-h2{
     font-size: 42px;
 }
+.about-sec2{
+    margin: 5% 5% 0 0;
+}
+.about-sec1-text{
+    width: 90%;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    opacity: 0.85;
+}
+.about-sec1-text-p{
+    margin-bottom: 3%;
+}
 .about-img{
     width: 500px;
     height: 450px;
-    border-radius: 2%;
+    border-radius: 3%;
+    box-shadow: 20px 20px 1px #d8ac4c;
 }
 
 /*AREAS*/
