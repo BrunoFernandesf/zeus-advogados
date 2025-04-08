@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body{
     font-family: "Questrial", serif;
@@ -13,6 +14,7 @@ body{
     position: fixed;
     width: 100%;
     padding: 1% 0 0 0;
+    background-color: #08242c;
 }
 .logo{
     width: 25%;
@@ -37,6 +39,7 @@ body{
     border-top: 1px solid #d8ac4c;
     border-bottom: 1px solid #d8ac4c;
     padding: 1%;
+    cursor: pointer;
 }
 .socials{
     width: 15%;
@@ -204,8 +207,9 @@ body{
 .areas-icones-text{
     color: white;
     font-size: 16px;
-    width: 85%;
+    width: 90%;
     text-align: center;
+    font-family: "Nunito", sans-serif;
 }
 .card{
     display: flex;
@@ -214,9 +218,13 @@ body{
     justify-content: space-between;
     background-color: #0f3441;
     font-size: 14px;
-    width: 25%;
+    width: 20%;
     margin: 1%;
     padding: 4% 1% 4% 1%;
+    border-radius: 5%;
+}
+.card:hover{
+    background-color: #144e63;
 }
 
 /*BLOG*/
@@ -354,37 +362,77 @@ body{
     padding-top: 4%;
 }
 
-/*REVIEWS*/
-.reviews{
+/* REVIEWS */
+.reviews {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.reviews-title{
+.reviews-title {
     color: #0f3441;
     font-size: 48px;
     font-weight: 600;
     margin: 3% 0 1% 0;
 }
-.reviews-subtitle{
+.reviews-subtitle {
     color: #0f3441;
     font-size: 20px;
-    margin: 1% 0 1% 0; 
+    margin: 1% 0 1% 0;
 }
-.reviews-container{
+.reviews-container {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
-.reviews-cards{
+.reviews-container-grupos {
+    display: flex;
+    transition: transform 1.0s ease;
+}
+.reviews-container-grupo {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    box-sizing: border-box;
+    opacity: 0; /* Esconde as divs inicialmente */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+}
+.reviews-cards {
     background-color: #cac7c1;
     width: 350px;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 1% 0 0;
+    border-radius: 8px;
+    padding: 10px;
 }
-.reviews-score{
+.seta-esq, .seta-dir {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+}
+.seta-esq {
+    left: 10px;
+}
+.seta-dir {
+    right: 10px;
+}
+.reviews-score {
     margin: 1% 0 3% 0;
+}
+
+/* Visibilidade do grupo ativo */
+.reviews-container-grupo.active {
+    opacity: 1; /* Torna o grupo visível quando a classe 'active' for adicionada */
 }
 
 /*FALE CONOSCO*/
@@ -429,6 +477,9 @@ body{
     flex-direction: column;
     margin: 0 2% 0 0;
 }
+.fale-conosco-contato-container-heading{
+    margin: 10% 0 5% 0;
+}
 .fale-conosco-contato-container-titulo{
     font-size: 42px;
     font-weight: 600;
@@ -440,12 +491,42 @@ body{
     display: flex;
     flex-direction: column;
 }
+.input-text{
+    border-radius: 25px;
+    border: 1px solid grey;
+    background-color: #082434;
+    color: rgba(255, 255, 255, 0.750);
+    padding: 2%;
+    margin: 0 0 5% 0;
+}
+.input-textarea{
+    border-radius: 25px;
+    border: 1px solid grey;
+    background-color: #082434;
+    color: rgba(255, 255, 255, 0.750);
+    height: 200px;
+    padding: 1%;
+}
+.input-button{
+    color: white;
+    background-color: #d8ac4c;
+    border-radius: 25px;
+    border: 1px solid #d8ac4c;
+    margin: 5% 0 0 0;
+    padding: 2%;
+    font-size: 16px;
+}
 .fale-conosco-contato-container2{
     color: white;
+    margin: 4% 0 0 0;
 }
 .fale-conosco-contato-container2-map{
     border-radius: 2%;
 }
+.fale-conosco-contato-container2-list{
+    display: flex;
+}
+
 
 /*FOOTER*/
 .rodape{
