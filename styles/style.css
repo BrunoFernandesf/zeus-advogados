@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+    outline: 1px solid red; /* só para debug, remove depois */
+  }
+
 body{
     font-family: "Questrial", serif;
     width: 100vw;
@@ -124,7 +128,7 @@ body{
     justify-content: space-between;
     gap: 25px;
     width: 75%;
-    padding: 0 5% 0 5%;
+    padding: 0 0 0 12%;
 }
 .about-title{
     color: #00222e;
@@ -147,10 +151,10 @@ body{
     font-size: 42px;
 }
 .about-sec2{
-    margin: 5% 5% 0 0;
+    margin: 5% 10% 0 0;
 }
 .about-sec1-text{
-    width: 90%;
+    width: 80%;
     font-size: 18px;
     color: rgb(0, 0, 0);
     opacity: 0.85;
@@ -233,8 +237,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 0 5% 0;
 }
 .blog-title{
@@ -257,7 +261,7 @@ body{
 .blog-container-sec{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 2% 0 1% 2%;
 }
@@ -475,7 +479,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 0 2% 0 0;
+    margin: 0 5% 5% 0;
 }
 .fale-conosco-contato-container-heading{
     margin: 10% 0 5% 0;
@@ -519,12 +523,24 @@ body{
 .fale-conosco-contato-container2{
     color: white;
     margin: 4% 0 0 0;
+
 }
 .fale-conosco-contato-container2-map{
     border-radius: 2%;
+    margin: 0 0 5% 0;
 }
 .fale-conosco-contato-container2-list{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    margin: 0 0 1% 0;
+}
+.fale-conosco-contato-container2-list-img{
+    margin: 0 0 0 0;
+}
+#location-icon{
+    margin: 0 0 0 1%;
 }
 
 
@@ -535,19 +551,35 @@ body{
     justify-content: space-around;
     padding: 3% 0 5% 0;
 }
+.rodape-container{
+    width: 25%;
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .rodape-container-socials{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 35%;
 }
 .rodape-titles{
     color: #d3ab4c;
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin: 0 0 0 0;
+}
+.rodape-alttitle{
+    text-align: left;
+    width: 100%;
+    margin: 0 0 5% 0;
 }
 .rodape-contitems{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .rodape-contitems-sec{
     color: white;
@@ -556,6 +588,9 @@ body{
     flex-direction: column;
     justify-content: space-between;
     line-height: 20px;
+}
+.rodape-contitems-sec li{
+    margin: 0 0 2% 0;
 }
 #rodape-contato{
     margin-bottom: 10%;
