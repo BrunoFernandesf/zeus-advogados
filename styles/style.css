@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-* {
-    outline: 1px solid red; /* só para debug, remove depois */
-  }
-
 body{
     font-family: "Questrial", serif;
     width: 100vw;
